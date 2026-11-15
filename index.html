@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Wreckage | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="#" class="brand">
+            <span class="title">Astro <span>Wreckage</span></span>
+        </a>
+        
+        <ul class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="mission.html">Mission Log</a></li>
+            <li><a href="crew.html">Meet The Crew</a></li>
+            <li><a href="game.html" class="game-btn">Play Game</a></li>
+        </ul>
+    </nav>
+
+<section class="car">
+        <div class="car-bg-map" id="carMap"></div>
+        
+        <div class="image-credit" id="imageCredit">Credit: NASA/Goddard Space Flight Center (GSFC)</div>
+
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <div class="badge">INCOMING TRANSMISSION</div>
+                <h1>YOUR MISSION: MAKE MARS HOME.</h1>
+                <p>An unexplored planet. Limited resources. One chance to build a thriving settlement. Are you ready to take on the challenge?</p>
+                <div class="carousel-actions">
+                    <a href="game.html" class="btn primary">ACCEPT MISSION</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="badge">MISSION BRIEFING</div>
+                <h1>EVERY DECISION SHAPES THE FUTURE.</h1>
+                <p>Build structures, manage resources, and advance your research. Plan wisely, because time is running out and every decision counts.</p>
+                <div class="carousel-actions">
+                    <a href="game.html" class="btn primary">START YOUR MISSION</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-nav">
+            <button class="prev-btn">← PREV</button>
+            <div class="indicators">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+            <button class="next-btn">NEXT →</button>
+        </div>
+    </section>
+<section class="dashboard-grid">
+        <div class="dash-card mission-directive" id="letterCard">
+            <div class="letter-seal-view" id="letterSeal">
+                <div class="envelope-header">
+                    <span class="badge priority-badge">⚠️ HIGH PRIORITY</span>
+                    <span class="classification">CLASSIFIED</span>
+                </div>
+                <div class="envelope-body">
+                    <div class="envelope-icon">✉</div>
+                    <div class="envelope-text">
+                        <h3>INCOMING DISPATCH DETECTED</h3>
+                        <p>Priority level: Alpha. Encrypted dispatch package from Commander Martin.</p>
+                    </div>
+                </div>
+                <button class="btn primary" id="openLetterBtn">DECRYPT & OPEN ENVELOPE</button>
+            </div>
+
+            <div class="letter-popup-view" id="letterPopup" style="display: none;">
+                <div class="letter-popup-content">
+                    <span class="close-letter" id="closeLetterBtn">&times; CLOSE ENVELOPE</span>
+                    <p class="letter-from">TO: JUNIOR ASTRONAUT</p>
+                    <p>WELCOME TO THE MISSION, RECRUIT.</p>
+                    <p class="letter-body">
+                    You have been selected to take part in humanity's next great challenge: establishing a settlement on Mars. Your mission is to construct and expand your colony, manage limited resources, and advance research before time runs out. Every decision matters. Are you ready to get started? 
+                    </p>
+                    <div class="letter-signature">- COMMANDER MARTIN</div>
+                    <div>
+                        <a href="mission.html" class="btn lol">MISSION ASSIGNMENT ACTIVE </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  <div class="dash-card telemetry-box">
+    <div class="badge" style="color: var(--terminal-yellow); border-color: rgba(255, 176, 0, 0.4); background-color: rgba(255, 176, 0, 0.15);">LIVE FEED</div>
+            
+    <div class="telemetry-grid">
+        <div class="telemetry-item">
+            <span class="t-label">SOLAR ARRAY:</span>
+            <span class="t-val" id="solarVal" style="color: #4CAF50;">94%</span>
+        </div>
+    <div class="telemetry-item">
+        <span class="t-label">CORE PLASMA:</span>
+        <span class="t-val" id="plasmaVal" style="color: var(--terminal-yellow);">STABLE</span>
+    </div>
+    <div class="telemetry-item">
+        <span class="t-label">WATER RECLAMATION:</span>
+        <span class="t-val" id="waterVal" style="color: #4CAF50;">88%</span>
+    </div>
+    <div class="telemetry-item">
+        <span class="t-label">BATTERY STORAGE:</span>
+        <span class="t-val" id="batteryVal" style="color: var(--rust-orange);">DRAINING</span>
+        </div>
+    </div>
+</div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>

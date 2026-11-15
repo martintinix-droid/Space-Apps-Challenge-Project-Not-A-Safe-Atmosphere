@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Wreckage | Mission Log</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="brand"><span class="title">Astro <span>Wreckage</span></span></a>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mission.html" class="active">Mission Log</a></li>
+            <li><a href="crew.html">Meet The Crew</a></li>
+            <li><a href="game.html" class="game-btn">Play Game</a></li>
+        </ul>
+    </nav>
+
+    <main class="mission-page-container">
+
+        <section class="mars-section-block">
+            <div class="section-tag">LOG 01 | OVERVIEW</div>
+            <div class="mission-info-grid">
+                <div class="info-card">
+                    <h2>THE MISSION</h2>
+                    <p>
+                    Step into the boots of a space pioneer! Your mission is to establish a thriving habitat on Mars. Build life-support systems, keep your crew safe, manage vital resources like oxygen and power, and complete your research before time runs out!
+                    </p>
+                </div>
+                <div class="info-card highlight-info-card">
+                    <h2 style="color: var(--terminal-yellow);">OBJECTIVE</h2>
+                    <p>
+                    Monitor your settlement's power grids, water supplies, and other vital resources in real-time. Balance your energy output, build smart upgrades, and complete your research targets before the mission clock hits zero!
+                    </p>
+                    <div style="margin-top: 15px;">
+                        <a href="game.html" class="btn primary">Launch Game</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section class="mars-section-block">
+            <div class="section-tag" style="color: #4CAF50; border-color: rgba(76, 175, 80, 0.4); background-color: rgba(76, 175, 80, 0.15);">LOG 02 | TRAINING ACADEMY</div>
+            
+            <div class="mission-triple-grid">
+                
+                <div class="info-card interactive-log-card">
+                    <div class="card-header-row">
+                        <h2>BUILD YOUR SETTLEMENT</h2>
+                        <span class="toggle-icon">[+]</span>
+                    </div>
+                    <p class="card-summary">
+                    Turn a dusty Martian crater into a thriving, high-tech colony by mastering the basics of base construction and survival.
+                    </p>
+                    <div class="card-expanded-content">
+                        <p><strong>01 ESTABLISH YOUR BASE</strong> Learn how to place buildings and begin expanding your settlement.</p>
+                        <p><strong>02 MANAGE YOUR RESOURCES</strong> Keep track of your available resources and decide how to use them effectively.</p>
+                        <p><strong>03 ADVANCE YOUR RESEARCH</strong> Progress through research levels and work toward completing your mission objective.</p>
+                    </div>
+                </div>
+
+                <div class="info-card interactive-log-card">
+                    <div class="card-header-row">
+                        <h2>CRITICAL DECISIONS</h2>
+                        <span class="toggle-icon">[+]</span>
+                    </div>
+                    <p class="card-summary">
+                    Learn how to prioritize base life support, protect your power grid, and make tough calls when unexpected Martian emergencies strike.
+                    </p>
+                    <div class="card-expanded-content">
+                        <p><strong>Protocol Alpha (Power Conservation):</strong>A massive Martian dust storm is rolling in! Quickly choose which buildings to power down so you don't waste precious energy and resources while keeping your life-support running.</p>
+                        <p><strong>Protocol Beta (Resource Rationing):</strong>Expanding too fast will drain your supplies completely! Carefully balance building new modules with saving enough resources to hit your final mission goals.</p>
+                    </div>
+                </div>
+
+<div class="info-card video-card-container">
+                    <h2>MISSION PLANNING TRADE-OFFS</h2>
+                    <p style="font-size: 0.8rem; margin-bottom: 10px; color: var(--dust-grey);">Learn about the science, budgets, and difficult trade-offs behind planning deep-space missions.</p>
+                    <div class="video-container" style="position: relative; width: 100%; padding-bottom: 50%; height: 0; overflow: hidden; border-radius: 6px; border: 1px solid var(--mars-border);">
+                        <iframe src="https://www.youtube.com/embed/PYq1x1nX-Jk" title="Mission Planning Trade-Offs Video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen></iframe>
+                    </div>
+                </div>
+        </section>
+
+<section class="mars-timeline-hero">
+            <div class="timeline-hero-overlay">
+
+                <div class="timeline-intro-box">
+                    <div class="section-tag" style="color: var(--terminal-yellow); border-color: rgba(255, 176, 0, 0.4); background-color: rgba(255, 176, 0, 0.15);">LOG 03 | THE ARCHIVES</div>
+                    <h2>MARS MISSIONS IN A NUTSHELL</h2>
+                    <p>
+                    Explore how space technology has evolved from early flyby probes to advanced rovers and future human habitats. Every mission requires tough trade-offs—balancing rocket weight, fuel, and scientific gear—to safely carry out each phase of the journey, from launch to landing. Check out the timeline below to see how humanity is paving the path to the Red Planet!
+                    </p>
+                </div>
+
+<div class="timeline-container">
+    <div class="scanner-laser"></div>
+    <div class="timeline-track-line">
+                        
+                        <div class="timeline-node">
+                            <span class="t-year">1965</span>
+                            <div class="node-dot"></div>
+                            <div class="node-content">
+                                <h3>MARINER 4</h3>
+                                <p>NASA's Mariner 4 arrives and sends 21 photos of Mars back to Earth.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <span class="t-year">1971</span>
+                            <div class="node-dot"></div>
+                            <div class="node-content">
+                                <h3>MARS 3</h3>
+                                <p>USSR's Mars 3 lander completes a soft landing, but is lost after several seconds.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <span class="t-year">1971</span>
+                            <div class="node-dot"></div>
+                            <div class="node-content">
+                                <h3>MARINER 9</h3>
+                                <p>Discovers massive volcanoes and Valles Marineris from orbit.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <span class="t-year">1976</span>
+                            <div class="node-dot"></div>
+                            <div class="node-content">
+                                <h3>VIKING 1 &amp; 2</h3>
+                                <p>Landers touch down to study the surface environment and search for data.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <span class="t-year">1997</span>
+                            <div class="node-dot"></div>
+                            <div class="node-content">
+                                <h3>PATHFINDER &amp; SOJOURNER</h3>
+                                <p>Sojourner becomes the first wheeled rover to drive on another planet.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <span class="t-year">1997</span>
+                            <div class="node-dot"></div>
+                            <div class="node-content">
+                                <h3>GLOBAL SURVEYOR</h3>
+                                <p>Arrives in orbit and maps the Red Planet from pole to pole.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <span class="t-year">2001</span>
+                            <div class="node-dot"></div>
+                            <div class="node-content">
+                                <h3>MARS ODYSSEY</h3>
+                                <p>Begins a multi-decade mission relaying science data back to Earth.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <span class="t-year">2003</span>
+                            <div class="node-dot"></div>
+                            <div class="node-content">
+                                <h3>MARS EXPRESS</h3>
+                                <p>ESA orbiter stays active in service for over 19 years.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <span class="t-year">2004</span>
+                            <div class="node-dot"></div>
+                            <div class="node-content">
+                                <h3>SPIRIT &amp; OPPORTUNITY</h3>
+                                <p>Twin rovers find geological evidence of past flowing water.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <span class="t-year">2006</span>
+                            <div class="node-dot"></div>
+                            <div class="node-content">
+                                <h3>RECONNAISSANCE ORBITER</h3>
+                                <p>Relays more high-res data than any previous Mars mission.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <span class="t-year">2012</span>
+                            <div class="node-dot"></div>
+                            <div class="node-content">
+                                <h3>CURIOSITY ROVER</h3>
+                                <p>Lands at Gale Crater to detect organic compounds in the crust.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <span class="t-year">2014</span>
+                            <div class="node-dot"></div>
+                            <div class="node-content">
+                                <h3>MARS ORBITER MISSION</h3>
+                                <p>India's interplanetary probe successfully reaches Mars orbit.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <span class="t-year">2016</span>
+                            <div class="node-dot"></div>
+                            <div class="node-content">
+                                <h3>TRACE GAS ORBITER</h3>
+                                <p>Analyzes the precise composition of the Martian atmosphere.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <span class="t-year">2018</span>
+                            <div class="node-dot"></div>
+                            <div class="node-content">
+                                <h3>INSIGHT LANDER</h3>
+                                <p>Probes the deep interior structure of Mars for the first time.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <span class="t-year">2021</span>
+                            <div class="node-dot"></div>
+                            <div class="node-content">
+                                <h3>HOPE &amp; TIANWEN-1</h3>
+                                <p>The UAE's Hope orbiter and China's Tianwen-1 arrive at Mars.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <span class="t-year">2021</span>
+                            <div class="node-dot"></div>
+                            <div class="node-content">
+                                <h3>PERSEVERANCE &amp; INGENUITY</h3>
+                                <p>Perseverance lands alongside the first powered helicopter on another world.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <span class="t-year">2022</span>
+                            <div class="node-dot"></div>
+                            <div class="node-content">
+                                <h3>INSIGHT'S FINAL TRANSMISSION</h3>
+                                <p>The InSight lander concludes its historic mission after mapping deep marsquakes.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <span class="t-year">2024</span>
+                            <div class="node-dot"></div>
+                            <div class="node-content">
+                                <h3>EXOMARS &amp; SAMPLE CACHE</h3>
+                                <p>Orbiters and rovers continue mapping atmospheric gases and caching rock samples.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node highlight-node">
+                            <span class="t-year" style="color: var(--terminal-yellow);">2026</span>
+                            <div class="node-dot" style="background: var(--terminal-yellow); box-shadow: 0 0 12px var(--terminal-yellow);"></div>
+                            <div class="node-content">
+                                <h3 style="color: #FFFFFF;">ASTRO WRECKAGE</h3>
+                                <p>Jump into the game terminal to start playing!</p>
+                                <a href="game.html" class="btn primary" style="margin-top: 8px; font-size: 0.7rem; padding: 5px 10px;">Play Game</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
